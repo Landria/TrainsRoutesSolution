@@ -1,0 +1,6 @@
+require 'benchmark'
+require_relative 'lib/graph'
+graph = Graph.new('data.txt', false)
+
+puts 'Measure calculating map'
+puts Benchmark.measure { graph.calculate_map }
